@@ -1,0 +1,23 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+function sphere()
+{
+with(document.forms.calc)
+{
+var x=parseInt(radius.value)
+var y=parseInt(4/3*3.14*x*x*x)
+volume.value=y
+}
+}
+</script>
+</head>
+<body>
+<form name="calc">
+Radius of sphere<input type="text" name="radius">
+Volume of sphere<input type="text" name="volume">
+<input type="button" name="submit" value="submit" onclick="sphere()">
+</form>
+</body>
+</html>
+ 

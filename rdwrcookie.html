@@ -1,0 +1,26 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+function wrcookie()
+{
+	var m=document.getElementById("fname").value;
+	window.document.cookie=m;
+	
+}
+function rdcoookie()
+{
+	var cookiecontents;
+cookiecontents=window.document.cookie;
+alert(cookiecontents);
+}
+</script>
+</head>
+<body>
+<form name="mno">
+Name:<input type="text" name="fname" id="fname"><br>
+<input type="button"   value="write cookie"  onclick="wrcookie()">
+<input type="button"   value="read  cookie"  onclick="rdcoookie()">
+</form>
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+function mul()
+{
+	with(document.forms.abc)
+	{
+	if((fno.value.length>0)&&(sno.value.length>0))	
+	{
+	  var a=fno.value;
+	  a=parseInt(a);
+	  var b=sno.value;
+	  b=parseInt(b);
+	  var c;
+	  c=a*b;
+	  alert("The result is: "+c)
+	  
+	}	
+		
+}
+}
+function div()
+{
+	with(document.forms.abc)
+	{
+	if((fno.value.length>0)&&(sno.value.length>0))	
+	{
+	  var a=fno.value;
+	  a=parseInt(a);
+	  var b=sno.value;
+	  b=parseInt(b);
+	  var c;
+	  c=a/b;
+	  alert("The result is: "+c)
+	  
+	}	
+		
+}
+}
+</script>
+</head>
+<body>
+<form name="abc">
+1st Number<input type="text" name="fno" ><br><br>
+2st Number<input type="text" name="sno" ><br><br>
+<input type="reset" value="Multiply" onclick="mul()">
+<input type="reset" value="Divide" onclick="div()">
+</form>
+</body>
+</html>

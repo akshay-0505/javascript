@@ -1,0 +1,33 @@
+<html>
+<head>
+<Script  type="text/javascript">
+function setCookie()
+{
+var cookievalue1=escape(document.form1.customer.value)+";"
+var cookievalue2=escape(document.form1.age.value)+";"
+var cookievalue3=escape(document.form1.gender.value)+";"
+document.cookie="name"+cookievalue1
+document.cookie="name"+cookievalue2
+document.cookie="name"+cookievalue3
+document.write("Name:"+cookievalue1+"<br>");
+document.write("Age:"+cookievalue2+"<br>");
+document.write("Gender:"+cookievalue3+"<br>");
+}
+
+function getCookie() 
+{
+
+}
+</script>
+</head>
+<body>
+<form name="form1" action=" ">
+ Name: <input type="text" name="customer"/><br>
+ Age: <input type="text" name="age"><br>
+ Gender: <input type="text" name="gender"><br>
+<input type="button" value="setcookie" onclick="setCookie();"/>
+<input type="button" value="getcookie" onclick="getCookie();"/>
+<input type="reset" value="resetcookie" name="reset"/>
+</form>
+</body>
+</html>

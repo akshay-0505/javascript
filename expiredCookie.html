@@ -1,0 +1,25 @@
+<html>
+<head>
+<Script  type="text/javascript">
+
+function writeCookie()
+{
+var now =  new Date();
+now.setMonth( now.getMonth() + 1 );
+var cookievalue = escape(document.form3.customer.value) + ";" 
+
+document.cookie="name=" + cookievalue;
+document.cookie = "expires=" + now.toUTCString() + ";"
+document.write("******************************")
+document.write ("<br> Setting Cookies:<br> " + "name=" + cookievalue);
+}
+
+</script>
+</head>
+<body>
+<form name="form3" action="">
+Enter name: <input type="text" name="customer"/>
+<input type="button" value="Set Cookie" onclick="writeCookie()"/>
+</form>
+</body>
+</html>

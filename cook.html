@@ -1,0 +1,32 @@
+<html>
+<head>Cookies
+<script language="javascript"  type="text/javascript">
+function create()
+{
+	var d=new Date()
+	d.setMonth(d.getMonth()+1)
+	with(document.forms.cook)
+	{
+	 	window.cookie="name="+uname.value+";expires="+d.toUTCString()+";"
+		alert(window.cookie)
+	}
+}
+function getcook()
+{
+	var x=document.cookie
+	if(document.cookie=="")
+	{
+		alert("No Cookies")
+	}
+	else
+	alert(x)
+}
+</script>
+</head>
+<body>
+<form name="cook">
+name:<INPUT type ="text" name="uname" onchange="create()">
+<INPUT type="button" value="click to retrieve " onclick="getcook()">
+</form>
+</body>
+</html>

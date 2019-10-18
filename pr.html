@@ -1,0 +1,53 @@
+<html>
+<head>
+<link href="new.css" rel="stylesheet"> 
+</head>
+<body>
+<script language="javascript"type="text/javascript">
+document.write("<a href="image.html">Visit our HTML tutorial</a>")
+var tot=0;
+do
+{
+var a=parseInt(prompt("1-STARTER 2-MAIN MENU",""));
+switch(a)
+{
+
+case 1:
+document.write("<table border=2>")
+document.write("<tr><th>no</th><th>ITEM</th><th>PRICE</th></tr>")
+document.write("<a href=b.html><tr><td>1</td><td>VEG SOUP</td><td>150</td></tr></a>")
+document.write("<tr><td>2</td><td> MANCHURIAN </td><td>80</td></tr>")
+document.write("<tr><td>3</td><td> CHICKEN SOUP</td><td>160</td></tr>")
+document.write("<tr><td>4</td><td> CHINESE SOUP</td><td>180</td></tr>")
+document.write("</table>")
+break;
+case 2:
+var z=parseInt(prompt("1-VEG  2-NON VEG ",""));
+if(z==1)
+{
+document.write("<table border=2>")
+document.write("<tr><td>1</td><td>  PANEER HANDI</td><td>250</td></tr>")
+document.write("<tr><td>2</td><td> ALU MUTTER</td><td>240</td></tr>")
+document.write("<tr><td>3</td><td> CHICKEN SOUP</td><td>160</td></tr>")
+document.write("<tr><td>4</td><td> CHICKEN SOUP</td><td>160</td></tr>")
+document.write("</table>")
+}
+else if(z==2)
+{
+document.write("<table border=2>")
+document.write("<tr><td>1</td><td> CHICKEN HANDI</td><td>450</td></tr>")
+document.write("<tr><td>2</td><td> CHICKEN MALVANI</td><td>550</td></tr>")
+document.write("<tr><td>3</td><td> CHICKEN 65</td><td>160</td></tr>")
+document.write("<tr><td>4</td><td> EGG CURRY</td><td>220</td></tr>")
+document.write("</table>")
+}
+break;
+default:
+document.write("Invalid choice")
+
+}
+var m=prompt("do want to continue press 1","");
+}while(m==1);
+</script>
+</body>
+</html>

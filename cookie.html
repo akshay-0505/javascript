@@ -1,0 +1,20 @@
+<html>
+<head>
+<script language='javascript' type='text/javascript'>
+function abc()
+{
+with(document.forms.wlcm)
+{
+document.cookie='customer name'+fname.value+';'
+alert('cookie inserted')
+}
+}											
+</script>
+</head>
+<body>
+<form name='wlcm'>
+NAME<input type='text' name='fname' onchange='abc()'>
+Email<input type='text' name='email'>
+</form>
+</body>
+</html>

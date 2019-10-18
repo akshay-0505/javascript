@@ -1,0 +1,57 @@
+<html>
+<body>
+<script language="javascript" type="text/javascript">
+ var arr=new Array();
+var n=parseInt(prompt("enter no of sports you want",""));
+var i;
+var arr=new Array();
+document.write("<br>enter name of "+n+" sports")
+for (i=0;i<n;i++)
+{
+arr[i]=prompt("enter sport name"," ");
+}
+document.write(" <br>1.length  <br>2.print the list <br>3.last sports entered <br>4.first sports entered <br>5.add new sport <br>6.to display according to user<br> 0.exit")
+
+do
+{
+ var ch=parseInt(prompt("plz enter your choice ",""));
+switch(ch)
+{
+case 1:
+document.write("<a href=b.html> length is</a>")
+break;
+case 2:
+for(i=0;i<arr.length;i++)
+{
+document.write("<br>sport "+(i+1)+" is  "+arr[i])
+}
+break;
+case 3:
+document.write("<br> last sport entered is"+arr[arr.length-1]);
+break;
+case 4:
+document.write(" <br>last sport entered is"+arr[0]);
+break;
+case 5:
+var z=prompt("enter new sport","");
+var n=arr.push(z);
+//arr[arr.length]=prompt("enter new sport ","");
+break;
+case 6:
+var m=parseInt(prompt("you want sport from"," "));
+var n=parseInt(prompt("till"," "));
+var o=arr.slice(m-1,n);
+document.write(o);
+break;
+case 0:
+document.write("<br>visit again");
+document.write("<br>press 0 once again to exit");
+break;
+default:
+document.write("<br> plz enter correct choice");
+}
+ch=parseInt(prompt("do you want to continue press 1",""));
+}while(ch==1);  
+ </script>
+ </body>
+ </html>

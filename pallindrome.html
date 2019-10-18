@@ -1,0 +1,23 @@
+<html>
+<body>
+<script language="javascript" type="text/javascript">
+var n=parseInt(prompt("enter value of n",""));
+var res=0,rem,a;
+a=n;
+while(n!=0)
+{
+rem=n%10;
+res=res*10+rem;
+n=parseInt(n/10);
+}
+if(res==a)
+{
+ document.write("no is pallindrome")
+}
+else
+{
+document.write(" no is not palindrome")
+}
+</script>
+</body>
+</html>

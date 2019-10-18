@@ -1,0 +1,42 @@
+body
+{
+background-color:skyblue;
+
+}
+
+
+h1{
+    background-color: yellow;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+	background-color:black;
+	color:white;
+	border-bottom-color:white;
+	padding:8px;
+	text-align:center;
+}
+
+
+table, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+	background-color: pink;
+     text-align:center;
+
+}

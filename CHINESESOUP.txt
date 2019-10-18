@@ -1,0 +1,8 @@
+<html>
+<body background-image="soup.jpg">
+
+
+<marquee><img src="CHINESESOUP.jpg"  style="width:304px;height:228px;" ></marquee>
+<center><h1>SOUP</h1></center>
+</body>
+</html>
